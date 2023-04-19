@@ -142,7 +142,7 @@ export default {
          text-indent: -9999px;
          width: 70px;
          height: 40px;
-         background: grey;
+         background: $primary;
          display: block;
          border-radius: 50px;
          position: relative;
