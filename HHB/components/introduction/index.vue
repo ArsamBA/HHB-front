@@ -80,15 +80,18 @@ export default {
 @import '@/assets/scss/global.scss';
 
 .hhb-introduction {
-   // width: 100%;
    padding: 30px;
    display: flex;
    flex-direction: column;
    align-items: center;
-
+   
    @include mq (lg) {
       padding: 20px 30px;
-      right: 0;    
+      right: 0;  
+   }
+
+   @include mq (xl) { 
+      height: 100vh;   
    }
 }
 
@@ -295,8 +298,5 @@ export default {
       margin-top: 60px;
    }
 
-   @include mq (xxl) {
-      margin-top: 80px;
-   }
 }
 </style>
