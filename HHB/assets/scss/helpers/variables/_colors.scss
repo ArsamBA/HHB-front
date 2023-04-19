@@ -1,0 +1,41 @@
+//! use these colors if its needed
+
+// white to black
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #9e9e9e !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+// green
+$green-50:  #F9FDFC !default;
+$green-100: #e7f5f3 !default;
+$green-200: #cfebe7 !default;
+$green-300: #87cdc2 !default;
+$green-400: #56b9aa !default;
+$green-500: #0e9b85 !default;
+$green-600: #0b7c6a !default;
+$green-700: #074e43 !default;
+$green-800: #042e28 !default;
+$green-900: #031f1b !default;
+
+
+// ! Main Colors
+
+$primary: $green-500;
+$secondary: $green-100;
+// $success: $green;
+// $danger: $red;
+//------------------------------------------------
+$heading-color: $green-700;
+$subTitle-color: $gray-600;
+$body-color: $gray-700;
+$border-color: $green-500;
+$bg: $white;
+$bg-secondary: $green-100;
