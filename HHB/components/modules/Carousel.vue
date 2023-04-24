@@ -168,10 +168,12 @@
   .carousel {
     position: relative;
     width: 100%;
+    height: 100%;
+    top: 0%;
+    bottom: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 3rem;
 
     &.product-gallery-carousel {
       padding-bottom: 3rem;
@@ -184,6 +186,7 @@
   .slider-wrapper {
     width: 100%;
     overflow: hidden;
+    display: inline-flex;
   }
 
   .inner {
