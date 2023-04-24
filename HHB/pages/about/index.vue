@@ -1,21 +1,15 @@
 <template>
    <div>
       <div class="about-us-wrapper">
-         <Introduction/>
-         <div class="about-us-content-wrapper">
-            <div class="about-us-card">
-               <p><strong>گــــــروه ساختمــــانی H.H.B</strong> تحت مدیریت مهندس حجتی و مهندس بهزادپـور از سال 1386 فعالیت خود را در زمینه ساخت ساختمان های مسکونی، اداری  تجاری و ویلاسازی در تهران و حومه تهران تحت قالــــــب قراردادهـــــــای مدیریت پیمــــــــــــــان و پیمانکـــــــــــــاری آغـــــــــــــــــاز نمود. گروه ساختمانی HHB از سال 1391 اقدام به سرمایه گذاری طراحی و اجرای ساختمان های مسکونی در منطقه 2 تهران نمود و طی سالهای اخیر موفق به ساخت بالغ بر 100 واحـــــــد مسکونـــــــی شـــــــــده اســـــت. این گروه بواسطه همکاری با مهندسین مجرب در حوزه ساختمان در صدد ارتقاء سطح کیفی فضای مسکونی و فراهم ساختن محیطی مناسب سکونت به لحاظ معماری، آسایش و امنیت با بهره گیری از متد های روز صنعت ساختمان می باشد.</p>
-            </div>
-         </div>
+        <Introduction/>
+        <SectionsAboutContent/>
       </div>
    </div>
 </template>
 
 <script>
 export default {
-   components: {
-      Introduction: () => import('@/components/introduction/index.vue')
-   }
+
 }
 </script>
 
@@ -29,6 +23,9 @@ export default {
     display: flex;
     flex-direction: row;   
     justify-content: space-between;
+    position: absolute;   
+    top: 0;
+    bottom: 0;
   }
 
 }
