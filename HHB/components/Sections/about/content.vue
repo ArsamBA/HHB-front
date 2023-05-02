@@ -1,17 +1,15 @@
 <template>
   <div class="about-us-content-wrapper">
       <div class="about-us-card">
-         <p v-html="aboutData.description"></p>
+         <p v-html="aboutData.content"></p>
       </div>
    </div>
 </template>
 
 <script>
-import { useAboutUs } from '~/src/stores/aboutUs';
 export default {
-  setup () {
-    const aboutData = useAboutUs()
-    return aboutData
+  props:{
+    aboutData : Object
   }
 }
 </script>

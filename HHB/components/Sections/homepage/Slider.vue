@@ -1,6 +1,6 @@
 <template>
   <div class="hero-slider-wrapper">
-      <!-- <div class="hero-section-wrapper"  @mouseenter="buttonActive()" @mouseleave="buttonDisable()"> -->
+      <!-- <div class="hero-section-wrapper"  @mouseenter="buttonActive()" @mouseleave="buttonDisable()">
       <div class="hero-section-wrapper">
          <div class="hero-section" id="hero-slider">
                <div class="hero-image">
@@ -41,36 +41,36 @@
                </svg>
             </button>
          </div>
-      </div>
+      </div> -->
    </div>
 </template>
 
 <script>
 export default {
-   mounted() {        
-      this.sliderOnScrollLeft()
-      setInterval(() => this.sliderOnScrollLeft(), 3000)             
-   },
-   sliderOnScrollLeft() {
-         this.count++;
-         let tl = gsap.timeline({});
-         if(this.count > 6){
-            tl.to(".hero-image", {x: 0 , duration:1}); 
-            this.count = 0;   
-         } else {
-            tl.to(".hero-image", {x: '+=100%' , duration:1});    
-         }
-   },  
-   sliderOnScrollRight() {
-         this.count--;
-         let tl = gsap.timeline({});
-         if(this.count < 0){
-            tl.to(".hero-image", {x: '+=600%' , duration:1}); // in this line, on the x section put (the number of slide * 100)
-            this.count = 6;   
-         } else {
-            tl.to(".hero-image", {x: '-=100%' , duration:1});    
-         }        
-   },
+   // mounted() {        
+   //    this.sliderOnScrollLeft()
+   //    setInterval(() => this.sliderOnScrollLeft(), 3000)             
+   // },
+   // sliderOnScrollLeft() {
+   //       this.count++;
+   //       let tl = gsap.timeline({});
+   //       if(this.count > 6){
+   //          tl.to(".hero-image", {x: 0 , duration:1}); 
+   //          this.count = 0;   
+   //       } else {
+   //          tl.to(".hero-image", {x: '+=100%' , duration:1});    
+   //       }
+   // },  
+   // sliderOnScrollRight() {
+   //       this.count--;
+   //       let tl = gsap.timeline({});
+   //       if(this.count < 0){
+   //          tl.to(".hero-image", {x: '+=600%' , duration:1}); // in this line, on the x section put (the number of slide * 100)
+   //          this.count = 6;   
+   //       } else {
+   //          tl.to(".hero-image", {x: '-=100%' , duration:1});    
+   //       }        
+   // },
    // buttonActive(){
    //    document.querySelector('.right-control-hero').style.display = 'initial',
    //    document.querySelector('.left-control-hero').style.display = 'initial'
@@ -79,6 +79,24 @@ export default {
    //    document.querySelector('.right-control-hero').style.display = 'none',
    //    document.querySelector('.left-control-hero').style.display = 'none'
    // }
+   data () {
+      return {
+        colors: [
+          'indigo',
+          'warning',
+          'pink darken-2',
+          'red lighten-1',
+          'deep-purple accent-4',
+        ],
+        slides: [
+          'First',
+          'Second',
+          'Third',
+          'Fourth',
+          'Fifth',
+        ],
+      }
+   }
 }
 </script>
 

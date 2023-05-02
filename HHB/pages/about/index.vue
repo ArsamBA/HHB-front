@@ -2,15 +2,18 @@
    <div>
       <div class="about-us-wrapper">
         <Introduction/>
-        <SectionsAboutContent/>
+        <SectionsAboutContent :aboutData="aboutData"/>
       </div>
    </div>
 </template>
 
-<script>
-export default {
+<script setup>
+  import { useAboutUs } from '~/src/stores/aboutUs';
+  const aboutData = useAboutUs()
 
-}
+  // useHead({
+  //   meta: [{ property: 'og:title', content: `App Name - ${route.meta.title}` }]
+  // })
 </script>
 
 <style lang="scss">

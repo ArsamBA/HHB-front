@@ -7,15 +7,8 @@
    </div>
 </template>
 
-<script>
-export default {
-   head() {
-      return {
-         title: this.title,
-         description: this.description 
-      }
-   }
-}
+<script setup>
+
 </script>
 
 <style lang="scss">

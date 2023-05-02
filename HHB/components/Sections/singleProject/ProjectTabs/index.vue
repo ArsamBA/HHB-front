@@ -7,22 +7,22 @@
          </div>
          <div class="tab-content-wrapper">
             <div v-if="descriptionTab" class="tab-content description-tab">
-               <p v-html="singleProjectData.tabContent.description"></p>
+               <p v-html="singleProjectData.description"></p>
             </div>
 
             <div v-if="specificationsTab" class="tab-content specifications-tab">
                <ul>
-                  <li>اسم پروژه:<span style="font-weight: bold; margin: 0px 10px;"> {{ singleProjectData.tabContent.specifications.name }} </span></li>
-                  <li>موقعیت:<span style="font-weight: bold; margin: 0px 10px;"> {{ singleProjectData.tabContent.specifications.location }} </span></li>
-                  <li>کاربری:<span style="font-weight: bold; margin: 0px 10px;"> {{ singleProjectData.tabContent.specifications.user }} </span></li>
-                  <li>وضعیت:<span style="font-weight: bold; margin: 0px 10px;"> {{ singleProjectData.tabContent.specifications.situation }} </span></li>
-                  <li>سال ساخت:<span style="font-weight: bold; margin: 0px 10px;"> {{ singleProjectData.tabContent.specifications.constructionYear }} </span></li>
+                  <li>اسم پروژه:<span style="font-weight: bold; margin: 0px 10px;"> {{ singleProjectData.name }} </span></li>
+                  <li>موقعیت:<span style="font-weight: bold; margin: 0px 10px;"> {{ singleProjectData.location }} </span></li>
+                  <li>کاربری:<span style="font-weight: bold; margin: 0px 10px;"> {{ singleProjectData.user }} </span></li>
+                  <li>وضعیت:<span style="font-weight: bold; margin: 0px 10px;"> {{ singleProjectData.status }} </span></li>
+                  <li>سال ساخت:<span style="font-weight: bold; margin: 0px 10px;"> {{ singleProjectData.constructionYear }} </span></li>
                </ul>
             </div>
 
             <div v-if="galleryTab" class="tab-content gallery-tab">
                <figure v-for="image in singleProjectData.tabContent.gallery" :key="image">
-                  <img :src="`/_nuxt/static/images/slider/${image}`" :alt="singleProjectData.tabContent.specifications.name" loading="lazy"/>
+                  <img :src="`/_nuxt/static/images/slider/${image_url}`" :alt="singleProjectData.imageAlt" loading="lazy"/>
                </figure>
             </div>
 

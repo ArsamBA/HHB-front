@@ -1,7 +1,7 @@
 <template>
    <div class="projects-main-photo-wrapper">
       <div class="projects-main-photo">
-         <img :src="`/_nuxt/static/images/slider/${singleProjectData.mainImage.image}`" :alt="singleProjectData.tabContent.specifications.name" loading="lazy"/>  
+         <img :src="`/_nuxt/static/images/slider/${singleProjectData.image_url}`" :alt="singleProjectData.imageAlt" loading="lazy"/>  
       </div>
       <div class="tap-to-down-button" @click="goDown">
          <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512"><path d="M16.361,18h-3.361V1c0-.552-.447-1-1-1s-1,.448-1,1V18h-3.361c-.695,0-1.044,.852-.552,1.35l4.361,4.418c.305,.309,.799,.309,1.104,0l4.361-4.418c.492-.498,.143-1.35-.552-1.35Z"/></svg>

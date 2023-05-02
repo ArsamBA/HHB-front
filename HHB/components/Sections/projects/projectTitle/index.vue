@@ -1,6 +1,6 @@
 <template>
   <div class="projects-title-wrapper">
-      <p>پروژه های <Strong>گــــــروه ساختمــــانی H.H.B </Strong></p>
+      <p>پروژه های <span style="font-weight: bold;">گــــــروه ساختمــــانی H.H.B </span></p>
   </div>
 </template>
 
