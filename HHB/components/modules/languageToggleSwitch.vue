@@ -1,13 +1,7 @@
 <template>
-   <div class="language-switcher-button">
-      <div class="language-switcher">
-         <!-- <nuxt-link :to="switchLocalePath('en')" class="nav-link nav-link-language">EN</nuxt-link>
-         <span class="separate-line"></span>
-         <nuxt-link :to="switchLocalePath('fa')" class="nav-link nav-link-language">FA</nuxt-link> -->
-         <nuxt-link class="nav-link nav-link-language">EN</nuxt-link>
-         <span class="separate-line"></span>
-         <nuxt-link class="nav-link nav-link-language">FA</nuxt-link>
-      </div>
+   <div class="language-switcher">
+      <!-- <nuxt-link :to="switchLocalePath('en')" class="nav-link nav-link-language">EN</nuxt-link>
+      <nuxt-link :to="switchLocalePath('fa')" class="nav-link nav-link-language">FA</nuxt-link> -->
    </div>
 </template>
 
@@ -19,31 +13,42 @@ export default {
 
 <style lang="scss">
 @import '@/assets/scss/global.scss';
-.language-switcher-button{
-   width: 70px;
-   height: 30px;
-   border: 2px solid $secondary;
-   padding: 5px;
-   
-   .language-switcher{
-      width: 100%;
-      position: relative;
+.language-switcher {
+   display: flex;
+   border: 1px solid $secondary;
+   border-radius: 5px;
+   padding: 5px 8px;
+   transition: 0.3s all linear;
+
+   @include mq(lg) {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
-      color: $secondary;
-      font-weight: bold;
+
+      .nav-link-language {
+         display: block;
+         transition: 0.3s all linear;
+         margin: 0;
+         opacity: 0;
+         font-size: 0;
+         order: 2;
+
+         &.nuxt-link-active {
+            opacity: 1;
+            font-size: 18px;
+            order: 1;
+         }
+      }
+
+      &:hover {
+            height: auto;
+
+            .nav-link-language {
+               margin-top: 0;
+               opacity: 1;
+               font-size: 18px;
+            }   
+      }
    }
-
-}
-
-.separate-line{
-   width: 2px;
-   height: 29px;
-   border-left: 2px solid $secondary;
-   position: absolute;
-   bottom: 2px;
-   right: 50%;
 }
 </style>
