@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="contact-us-wrapper">
-      <Introduction/>
       <SectionsContactContent/>
+      <Introduction/>
     </div>
   </div>
 </template>

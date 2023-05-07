@@ -1,8 +1,8 @@
 <template>
    <div>
       <div class="about-us-wrapper">
-        <Introduction/>
         <SectionsAboutContent :aboutData="aboutData"/>
+        <Introduction/>
       </div>
    </div>
 </template>

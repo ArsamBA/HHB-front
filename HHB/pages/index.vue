@@ -1,8 +1,8 @@
 <template>
    <div>
       <div class="homepage-wrapper">
-        <Introduction/>
         <SectionsHomepageSlider/>
+        <Introduction/>
       </div>
    </div>
 </template>

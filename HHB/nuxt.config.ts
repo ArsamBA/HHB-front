@@ -8,6 +8,13 @@ export default defineNuxtConfig({
     modules: [
       // ...
       '@pinia/nuxt',
+      [
+        '@nuxtjs/i18n',
+        {
+          vueI18n: './i18n.config.ts'
+        }
+
+      ]
     ],
     imports: {
       autoImport: false
@@ -20,4 +27,13 @@ export default defineNuxtConfig({
         'process.env.DEBUG': false,
       },
     },
+    app: {
+      head: {
+        charset: 'utf-8',
+        viewport: 'width=device-width, initial-scale=1',
+        // htmlAttrs: {
+        //   lang: 'en'
+        // }
+      }
+    }
 })

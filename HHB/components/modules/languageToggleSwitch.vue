@@ -1,14 +1,12 @@
 <template>
    <div class="language-switcher">
-      <!-- <nuxt-link :to="switchLocalePath('en')" class="nav-link nav-link-language">EN</nuxt-link>
-      <nuxt-link :to="switchLocalePath('fa')" class="nav-link nav-link-language">FA</nuxt-link> -->
+      <nuxt-link :to="switchLocalePath('en')" class="nav-link nav-link-language">EN</nuxt-link>
+      <nuxt-link :to="switchLocalePath('fa')" class="nav-link nav-link-language">FA</nuxt-link>
    </div>
 </template>
 
-<script>
-export default {
+<script setup>
 
-}
 </script>
 
 <style lang="scss">

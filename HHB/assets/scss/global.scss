@@ -17,18 +17,11 @@
     font-family: IRANSans;
 }
 
-html{
-    direction: rtl;
+
+html:lang(en) {
+    direction: ltr;
 }
 
-// .main {
-//     margin: 60px 0px 350px;
-
-//     @include mq (md) {
-//         margin: 75px 0px 400px;
-//     }
-
-//     @include mq(lg) {
-//         margin: 90px 0px 450px;
-//     }
-// }
+html:lang(fa) {
+    direction: rtl;
+}
